@@ -3,32 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-        content="GenerativeGaussian">
+  <meta name="description" content="GenerativeGaussian">
   <meta name="keywords" content="Human Avatar, Gaussian Splatting, 3D Reconstruction">
   <title>GenerativeGaussian</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
   <link rel="stylesheet" href="./static/css/ppage.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -36,54 +32,44 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
+<!-- ===== Title ===== -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 style="font-size:30px; width: 1100px">
-            GenerativeGaussian: 3D Content Creation Based on Gaussian Splatting with Perceptual Geometry and Depth Regularization
+          <h1 style="font-size:30px; width:1100px">
+            GenerativeGaussian: 3D Content Creation Based on Gaussian Splatting
+            with Perceptual Geometry and Depth Regularization
           </h1>
-          <!-- 新增匿名提交文字 -->
           <h3 style="font-size:18px; font-weight:normal; color:#555; margin-top:10px;">
             Anonymous Submission
           </h3>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Paper Link -->
-              <span class="link-block">
-                <a href="javascript:void(0)"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- arXiv Link -->
-              <span class="link-block">
-                <a href="javascript:void(0)"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Code Link -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (Coming Soon)</span>
-                </a>
-              </span>
-            </div>
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="javascript:void(0)" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="javascript:void(0)" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming Soon)</span>
+              </a>
+            </span>
           </div>
 
         </div>
@@ -92,9 +78,7 @@
   </div>
 </section>
 
-<div class="container">
-
-<!-- 框架图 -->
+<!-- ===== Framework ===== -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -106,50 +90,103 @@
   </div>
 </section>
 
-<!-- ===== 以下视频部分全部注释掉 ===== -->
-
-<!-- 
-<section class="hero teaser">
+<!-- ===== Results Videos ===== -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="content has-text-centered">
-      <div class="hero-body">
-        <video id="teaser-framework" autoplay muted loop playsinline width="90%">
-          <source src="./static/video/Framework.mp4" type="video/mp4">
-        </video>
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        <h2 class="title is-3">Results</h2>
       </div>
+    </div>
+
+    <div class="columns is-multiline is-centered">
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/anya.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Anya</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/astronaut.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Astronaut</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/catstatue.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Cat Statue</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/csm.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">CSM</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/frog.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Frog</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/ghost.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Ghost</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/rabbit.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Rabbit</p>
+      </div>
+
+      <div class="column is-one-quarter">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/video/zelda.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered">Zelda</p>
+      </div>
+
     </div>
   </div>
 </section>
--->
 
-<!-- 摘要 -->
+<!-- ===== Abstract ===== -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-          
-          </p>
-          <p><b>Index Terms:</b> </p>
+          <p></p>
+          <p><b>Index Terms:</b></p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 视频部分保持注释状态 ===== -->
-
+<!-- ===== Footer ===== -->
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
           </p>
         </div>
       </div>
@@ -159,4 +196,3 @@
 
 </body>
 </html>
-
