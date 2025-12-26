@@ -168,8 +168,25 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p></p>
-          <p><b>Index Terms:</b></p>
+          <p>
+            Reconstructing 3D objects from a single image remains challenging due to severe
+            viewpoint ambiguity and inconsistent multi-view supervision. Existing image-to-3D
+            methods rely on generative models to infer unseen views, but often suffer from unstable
+            geometry and cross-view consistency. In this paper, we propose <b>GenerativeGaussian</b>,
+            an image-to-3D reconstruction framework based on 3D Gaussian Splatting and diffusion
+            priors. We reformulate SDS-based optimization as a view-consistent geometric learning
+            problem and introduce a perceptual geometry supervision with a nearest-anchor strategy
+            to stabilize diffusion-guided Gaussian optimization. In addition, we incorporate a
+            depth regularization scheme to constrain the spatial distribution of Gaussian
+            primitives and improve geometric fidelity. To further enhance appearance quality, we
+            extract a textured mesh and refine the UV texture using the color and structural
+            constraints. Extensive experiments demonstrate that GenerativeGaussian outperforms
+            state-of-the-art image-to-3D methods in color fidelity, geometric accuracy, and
+            multi-view consistency. The project page is available at
+            <a href="https://gengaussian.github.io/GenerativeGaussian/" target="_blank">
+              https://gengaussian.github.io/GenerativeGaussian/
+            </a>.
+          </p>
         </div>
       </div>
     </div>
